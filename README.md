@@ -35,14 +35,8 @@ Sistema web em PHP para gestão de ingressos, produtos (eventos), categorias e a
 3. **Configuração**
    - Opcional: copie `CRUD/config.example.php` para `CRUD/config.php` e ajuste host, banco, usuário e senha. Se não existir `config.php`, o sistema usa os valores em `CRUD/conexao.php`.
 
-4. **Senhas em hash (recomendado após importar o banco)**
-   ```bash
-   php CRUD/scripts/atualizar_senhas.php
-   ```
-   - Os usuários de exemplo passam a usar a senha **senha123** (em hash). Troque em produção.
-
-5. **Acesso**
-   - Abra no navegador a pasta do projeto (ex.: `http://localhost/crud_ingresso/login/`). Login: **Ana Silva** / **senha123** (após rodar o script de senhas).
+4. **Acesso**
+   - Abra no navegador a pasta do projeto (ex.: `http://localhost/crud_ingresso/login/`). Os dados de exemplo do banco usam a senha **senha123** (ex.: login **Ana Silva**).
 
 ## Estrutura do projeto
 
@@ -53,14 +47,12 @@ crud_ingresso/
 │   ├── config.php         # Não versionado (copiar de config.example.php)
 │   ├── config.example.php
 │   ├── conexao.php
-│   ├── processa_login.php # Processa login (sessão + password_verify)
+│   ├── processa_login.php
 │   ├── logout.php
-│   ├── valida_login.php   # Protege páginas (exige sessão logada)
+│   ├── valida_login.php
 │   ├── assets/
 │   ├── layouts/
-│   ├── pages/
-│   └── scripts/
-│       └── atualizar_senhas.php
+│   └── pages/
 └── login/
     ├── index.php
     └── style.css
@@ -75,14 +67,12 @@ crud_ingresso/
 
 ## Credenciais de demonstração
 
-Após importar o `BANCO.sql` e rodar `atualizar_senhas.php`:
+O `BANCO.sql` já inclui usuários de exemplo. Senha padrão: **senha123**.
 
-| Nome           | Senha    |
-|----------------|----------|
-| Ana Silva      | senha123 |
-| Bruno Costa    | senha123 |
-
-*(Altere as senhas em ambiente de produção.)*
+| Nome        | Senha    |
+|-------------|----------|
+| Ana Silva   | senha123 |
+| Bruno Costa | senha123 |
 
 ## Licença
 
