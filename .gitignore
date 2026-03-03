@@ -1,0 +1,19 @@
+# Configuração local (não versionar credenciais)
+CRUD/config.php
+.env
+.env.local
+*.env
+
+# Sistema e IDE
+.DS_Store
+Thumbs.db
+*.log
+.idea
+.vscode
+
+# Dependências
+vendor/
+node_modules/
+
+# Uploads (se houver)
+CRUD/assets/img/uploads/

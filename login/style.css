@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1a0a2e 0%, #16213e 50%, #0f3460 100%);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+
+.login-wrapper {
+  width: 100%;
+  max-width: 360px;
+}
+
+.login-card {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.login-card .btn-primary {
+  border-radius: 8px;
+  font-weight: 500;
+  padding: 0.6rem 1rem;
+}
